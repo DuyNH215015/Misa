@@ -1,0 +1,13 @@
+- Giao diện khi vào đầu tiên khi vào ứng dụng có hiển thị đầy đủ các thành phần: Header, Sidebar và Bảng dữ liệu. 
+- Phân hệ Ứng viên cho phép xem danh sách ứng viên có phân trang, tìm kiếm nhanh theo tên, email, số điện thoại
+- Khai báo file danh sách ứng viên mặc định trong candidate-data.json
+- Lấy dữ liệu mặc định trên lưu vào localstorage
+- Hiển thị danh sách ứng viên từ localstorage
+- Cho phép thu gọn và mở rộng sidebar và lưu lại trạng thái này
+- Popup thêm mới ứng viên
+- Lưu dữ liệu vào đầu danh sách trong localstorage sau đó load lại danh sách
+- Popup sửa ứng viên:
+- Đổi title thành “Chỉnh sửa thông tin ứng viên”
+- Bind dữ liệu ứng viên lên popup
+- Khi lưu thì cập nhật thông tin ứng viên trong localstorage
+

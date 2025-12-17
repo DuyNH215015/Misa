@@ -1,0 +1,798 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/popup.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- Container -->
+    <div class="container display-flex flex-direction-column">
+      <!-- header -->
+      <div class="header display-flex justify-content-between">
+        <div class="left-header-container">
+          <div class="display-flex align-items-center event-noel">
+            <div class="icon-menu"></div>
+            <div class="icon-logo-recuirment"></div>
+            <div class="title-name">Tuyển dụng</div>
+          </div>
+          <div class="search-input-conatiner display-flex align-items-center">
+            <div class="input display-flex align-items-center">
+              <div class="icon-search"></div>
+              <div class="data-text">
+                Tìm kiếm tin tuyển dụng, ứng viên, nhân tài...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-header-conatiner">
+          <div class="recruitment-page">
+            <div class="icon-global"></div>
+            <div class="icon-text">Website tuyển dụng</div>
+          </div>
+          <div class="icon-notify"></div>
+          <div class="integration-cart">
+            <div class="icon-total">2</div>
+          </div>
+          <div class="apui-user"></div>
+          <div class="message"><div class="icon-total">1</div></div>
+          <div class="notification"></div>
+          <div class="help"></div>
+          <div class="moremenu"></div>
+          <div class="knowledge"></div>
+          <div class="profile"></div>
+        </div>
+      </div>
+
+      <!-- content -->
+      <div class="content display-flex flex1">
+        <!-- sidebar -->
+        <div class="sidebar color-bg" id="sidebar">
+          <div class="list-items-container">
+            <div
+              class="list-items display-flex align-items-center flex-direction-column"
+            >
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Tin tuyển dụng
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item active">
+                <div class="item-content">
+                  <div class="item-icon-sb-candidate"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Ứng viên
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-calender"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Lịch
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-talent"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Kho tiềm năng
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-recruitment"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Chiến dịch tuyển dụng
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-task"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Công việc
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-aimarketting"></div>
+                  <div class="item-text display-flex align-items-center">
+                    aiMarketing
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-chatbox"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Trao đổi với ứng viên
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-report"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Báo cáo
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Tin tuyển dụng
+                  </div>
+                </div>
+              </div>
+              <div class="sidebar-item">
+                <div class="item-content">
+                  <div class="item-icon-sb-more"></div>
+                  <div class="item-text display-flex align-items-center">
+                    Khác
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-area" id="toggleBtn">
+              <div class="bottom-container display-flex align-items-center">
+                <div class="icon" id="toggleIcon"></div>
+                <div class="text">Thu gọn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+          <div class="list-candidate-center display-flex flex-direction-column">
+            <div class="title-header">
+              <div class="title-header-left">Ứng viên</div>
+              <div class="title-header-right">
+                <div class="add-people" id="add-people">
+                  <div class="icon-add"></div>
+                  <div class="title-name-add display-flex align-items-center">
+                    Thêm ứng viên
+                  </div>
+                </div>
+                <div class="more-option">
+                  <div class="icon-more"></div>
+                </div>
+              </div>
+            </div>
+            <div class="candidate-wrapper">
+              <div
+                class="candidate-wrapper-content display-flex flex-direction-column flex1 justify-content-between"
+              >
+                <div class="toolbar-grid-container">
+                  <div class="toolbar-grid-default">
+                    <div class="toolbar-grid-left">
+                      <div class="search-grid">
+                        <div class="icon-search-conainer">
+                          <div class="icon-search"></div>
+                        </div>
+                        <input
+                          type="text"
+                          maxlength="255"
+                          placeholder="Tìm kiếm hoặc nhờ AI trợ giúp"
+                          class="search-grid-text"
+                          id="search-grid"
+                        />
+                      </div>
+                    </div>
+                    <div class="toolbar-grid-right g-8">
+                      <div class="icon-container m-r-8">
+                        <div class="icon-filter" title="bộ lọc"></div>
+                      </div>
+                      <div class="icon-container m-r-8">
+                        <div class="icon-export" title="xuất khẩu"></div>
+                      </div>
+                      <div class="icon-container m-r-8">
+                        <div
+                          class="icon-history"
+                          title="xem hoạt động nhanh"
+                        ></div>
+                      </div>
+                      <div class="icon-container m-r-8">
+                        <div class="icon-settings" title="cài đặt"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span
+                  style="width: 100%; height: 1px; background-color: #ddd"
+                ></span>
+                <!-- data grid content -->
+                <div class="grid-content">
+                  <div
+                    class="data-grid-container display-flex flex-direction-column"
+                  >
+                    <!-- Table Content -->
+                    <div class="table-content">
+                      <table class="data-table">
+                        <thead>
+                          <tr>
+                            <th class="col-checkbox" id="">
+                              <input type="checkbox" class="checkbox-all" />
+                            </th>
+                            <th style="width: 327px" id="c-phone">
+                              Số điện thoại
+                            </th>
+
+                            <th style="width: 150px" id="c-source">
+                              Nguồn ứng viên
+                            </th>
+                            <th style="width: 167px" id="c-full-name">
+                              Họ và tên
+                            </th>
+                            <th style="width: 217px" id="c-email">Email</th>
+                            <th style="width: 220px" id="c-campaign">
+                              Chiến dịch tuyển dụng
+                            </th>
+                            <th style="width: 200px" id="c-position">
+                              Vị trí tuyển dụng
+                            </th>
+                            <th style="width: 150px" id="c-job-post">
+                              Tin tuyển dụng
+                            </th>
+                            <th style="width: 180px" id="c-recruitment-stage">
+                              Vòng tuyển dụng
+                            </th>
+                            <th style="width: 120px" id="c-rating">Đánh giá</th>
+                            <th style="width: 150px" id="c-applied-date">
+                              Ngày ứng tuyển
+                            </th>
+                            <th style="width: 150px" id="c-education-level">
+                              Trình độ đào tạo
+                            </th>
+                            <th style="width: 150px" id="c-school">
+                              Nơi đào tạo
+                            </th>
+                            <th style="width: 150px" id="c-major">
+                              Chuyên ngành
+                            </th>
+                            <th style="width: 150px" id="c-last-company">
+                              Nơi làm việc gần đây
+                            </th>
+                            <th style="width: 150px" id="c-recruiter">
+                              Nhân sự khai thác
+                            </th>
+                            <th style="width: 150px" id="c-department">
+                              Đơn vị sử dụng
+                            </th>
+                            <th style="width: 285px" id="c-job-fit">
+                              Phù hợp với chân dụng
+                            </th>
+                            <th style="width: 285px" id="c-area">khu vực</th>
+                            <th style="width: 150px" id="c-referrer">
+                              Người giới thiệu
+                            </th>
+                            <th style="width: 250px" id="c-receiving-info">
+                              Thông tin tiếp nhận
+                            </th>
+                            <th style="width: 200px" id="c-talent-pool">
+                              Thuộc kho tiềm năng
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody id="candidate-table-body"></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- paging -->
+                <div
+                  class="paging display-flex flex-direction-row justify-content-between"
+                >
+                  <div class="text" style="font-size: 15px">
+                    Tổng
+                    <span
+                      class="total"
+                      style="font-weight: 700"
+                      id="total"
+                    ></span>
+                    bản ghi
+                  </div>
+                  <div
+                    class="right-paging display-flex flex-direction-rows align-items-center"
+                  >
+                    <div class="text-record">Số bản ghi/trang</div>
+                    <div class="drop-down-record">
+                      <select class="select-input" name="text-record">
+                        <option value="" disabled selected hidden></option>
+                        <option value="15" selected>15</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                      </select>
+                      <div class="icon-down"></div>
+                    </div>
+                    <div class="text-paging">
+                      <div class="start" id="start"></div>
+                      <span
+                        style="width: 5px; height: 0; border: 1px solid black"
+                      ></span>
+                      <div class="end" id="end"></div>
+                      <span> bản ghi </span>
+                    </div>
+                    <div class="icon-left-right">
+                      <div
+                        class="icon-left"
+                        style="margin-left: 10px"
+                        id="icon-left"
+                      ></div>
+                      <div class="icon-right" id="icon-right"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- popup  -->
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <div class="dx-popup-content display-flex flex-direction-column">
+            <div class="header-popup">
+              <div class="text">Thêm ứng viên</div>
+              <span id="close-popup" class="close icon-close"></span>
+            </div>
+            <div class="dx-scroll-wraper">
+              <div class="main-cotent-popup display-flex flex-direction-column">
+                <div class="import-cv">
+                  <div class="wrap-file">
+                    <div class="file-msg">
+                      Kéo thả hoặc bấm vào đây để tải CV lên
+                    </div>
+                    <div class="file-msg2">
+                      Chấp nhận file .doc, .docx, .pdf, .jpg, .jpeg, .png (Dung
+                      lượng &lt; hơn 15 Mb)
+                    </div>
+                  </div>
+                </div>
+                <div class="infor-candidate display-flex flex-direction-row">
+                  <div class="avatar-candidate">
+                    <div class="avatar">
+                      <span style="color: #b2b2b2">Ảnh</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="right-content">
+                      <div class="full-row">
+                        <div class="label-input">
+                          Họ và tên
+                          <span
+                            style="color: #ff1d1d !important; margin-left: 4px"
+                            ;
+                            >*</span
+                          >
+                        </div>
+                        <div class="streaming-field-container">
+                          <input
+                            type="text"
+                            maxlength="255"
+                            placeholder="Nhập họ và tên"
+                            class="text-input"
+                            name="fullName"
+                          />
+                        </div>
+                      </div>
+                      <div class="m-row m-dup-row">
+                        <div
+                          class="dup-row display-flex flex-direction-column m-r-15"
+                        >
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Ngày sinh
+                            <div
+                              class="bottom-left display-flex flex-direction-row align-items-center"
+                            >
+                              <div class="text-normal">Ngày tháng năm</div>
+                            </div>
+                          </div>
+                          <div class="date-form">
+                            <input
+                              type="date"
+                              class="date-input"
+                              name="birthday"
+                            />
+                          </div>
+                        </div>
+                        <div class="dup-row display-flex flex-direction-column">
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Giới tính
+                          </div>
+                          <div class="select-form">
+                            <select class="select-input" name="gender">
+                              <option value="" disabled selected>
+                                Chọn giới tính
+                              </option>
+                              <option value="male">Nam</option>
+                              <option value="female">Nữ</option>
+                            </select>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div
+                          class="label-input"
+                          style="
+                            border-top-right-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                          "
+                        >
+                          Khu vực
+                        </div>
+                        <div
+                          class="select-form display-flex flex-direction-row"
+                        >
+                          <select
+                            class="select-input"
+                            style="width: 90%"
+                            name="area"
+                          >
+                            <option value="" disabled selected hidden>
+                              Chọn khu vực
+                            </option>
+                            <option value="Ho-Tay">Hồ tây</option>
+                            <option value="Dong-Da">Đống Đa</option>
+                          </select>
+                          <div
+                            class="icon-down-placeholder"
+                            style="right: 55px"
+                          ></div>
+                          <div
+                            class="item-more-container display-flex align-items-center justify-content-center"
+                          >
+                            <div class="item-icon-sb-more"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="m-row m-dup-row">
+                        <div
+                          class="dup-row display-flex flex-direction-column m-r-15"
+                        >
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Số điện thoại
+                          </div>
+                          <div class="streaming-field-container">
+                            <input
+                              type="text"
+                              maxlength="255"
+                              placeholder="Nhập số điện thoại"
+                              class="text-input"
+                              name="phone"
+                            />
+                          </div>
+                        </div>
+                        <div class="dup-row display-flex flex-direction-column">
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Email
+                          </div>
+                          <div class="streaming-field-container">
+                            <input
+                              type="text"
+                              maxlength="255"
+                              placeholder="Nhập Email"
+                              class="text-input"
+                              name="email"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div class="label-input">Địa chỉ</div>
+                        <div class="streaming-field-container">
+                          <input
+                            type="text"
+                            maxlength="255"
+                            placeholder="Nhập địa chỉ"
+                            class="text-input"
+                            name="address"
+                          />
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div class="label-input">HỌC VẤN</div>
+                        <div class="edu-container">
+                          <div class="edu-left">
+                            <div class="icon-dot"></div>
+                            <div class="text">Trình độ đào tạo</div>
+                          </div>
+                          <div class="edu-right">
+                            <div class="streaming-field-container">
+                              <input
+                                type="text"
+                                maxlength="255"
+                                placeholder="Nhập trình độ đào tạo"
+                                class="text-input"
+                                name="educationLevel"
+                              />
+                            </div>
+                            <span
+                              style="
+                                position: absolute;
+                                width: 1px;
+                                height: 32px;
+                                background-color: #b2b2b2;
+                                right: 35px;
+                              "
+                            ></span>
+                            <div class="icon-add"></div>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                        <div class="edu-container">
+                          <div class="edu-left">
+                            <div class="icon-dot"></div>
+                            <div class="text">Nơi đào tạo</div>
+                          </div>
+                          <div class="edu-right">
+                            <div class="streaming-field-container">
+                              <input
+                                type="text"
+                                maxlength="255"
+                                placeholder="Nhập nơi đào tạo"
+                                class="text-input"
+                                name="educationPlace"
+                              />
+                            </div>
+                            <span
+                              style="
+                                position: absolute;
+                                width: 1px;
+                                height: 32px;
+                                background-color: #b2b2b2;
+                                right: 35px;
+                              "
+                            ></span>
+                            <div class="icon-add"></div>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                        <div class="edu-container">
+                          <div class="edu-left">
+                            <div class="icon-dot"></div>
+                            <div class="text">Chuyên nghành</div>
+                          </div>
+                          <div class="edu-right">
+                            <div class="streaming-field-container">
+                              <input
+                                type="text"
+                                maxlength="255"
+                                placeholder="Nhập chuyên nghành"
+                                class="text-input"
+                                name="major"
+                              />
+                            </div>
+                            <span
+                              style="
+                                position: absolute;
+                                width: 1px;
+                                height: 32px;
+                                background-color: #b2b2b2;
+                                right: 35px;
+                              "
+                            ></span>
+                            <div class="icon-add"></div>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div class="hight-light"></div>
+                      </div>
+                      <div class="m-row m-dup-row">
+                        <div
+                          class="dup-row display-flex flex-direction-column m-r-15"
+                        >
+                          <div
+                            class="label-input display-flex flex-direction-row"
+                          >
+                            Ngày ứng tuyển
+                            <span
+                              style="
+                                color: #ff1d1d !important;
+                                margin-left: 4px;
+                              "
+                              ;
+                              >*</span
+                            >
+                          </div>
+                          <div class="date-form">
+                            <input
+                              type="date"
+                              class="date-input"
+                              name="applyDate"
+                            />
+                          </div>
+                        </div>
+                        <div class="dup-row display-flex flex-direction-column">
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Nguồn ứng viên
+                          </div>
+                          <div class="select-form">
+                            <select class="select-input" name="source">
+                              <option value="" disabled selected>
+                                Chọn nguồn ứng viên
+                              </option>
+                              <option value="topcv">topcv</option>
+                              <option value="facebook">facebook</option>
+                            </select>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="m-row m-dup-row">
+                        <div
+                          class="dup-row display-flex flex-direction-column m-r-15"
+                        >
+                          <div
+                            class="label-input display-flex flex-direction-row"
+                          >
+                            Nhân sự khai thác
+                          </div>
+                          <div class="select-form">
+                            <select class="select-input" name="recruiter">
+                              <option value="" disabled selected>
+                                Chọn nhân sự khai thác
+                              </option>
+                              <option value="topcv">topcv</option>
+                              <option value="facebook">facebook</option>
+                            </select>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                        <div class="dup-row display-flex flex-direction-column">
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          >
+                            Cộng tác viên
+                          </div>
+                          <div class="select-form">
+                            <select class="select-input" name="collaborator">
+                              <option value="" disabled selected>
+                                Chọn cộng tác viên
+                              </option>
+                              <option value="topcv">topcv</option>
+                              <option value="facebook">facebook</option>
+                            </select>
+                            <div class="icon-down-placeholder"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div class="label-input">Nơi làm việc gần đây</div>
+                        <div class="streaming-field-container">
+                          <input
+                            type="text"
+                            maxlength="255"
+                            placeholder="Nhập nơi làm việc gần đây"
+                            class="text-input"
+                            name="lastCompany"
+                          />
+                        </div>
+                      </div>
+                      <div class="m-row m-dup-row" style="position: relative">
+                        <div
+                          class="dup-row display-flex flex-direction-column m-r-15"
+                        >
+                          <div
+                            class="label-input display-flex flex-direction-row"
+                          >
+                            Thời gian
+                          </div>
+                          <div class="date-form-to">
+                            <input
+                              type="date"
+                              class="date-input"
+                              name="workFrom"
+                            />
+                          </div>
+                        </div>
+                        <div class="dup-row display-flex flex-direction-column">
+                          <div
+                            class="label-input display-flex flex-direction-row justify-content-between"
+                          ></div>
+                          <div
+                            class="date-form-to display-flex align-items-right"
+                          >
+                            <input
+                              type="date"
+                              class="date-input"
+                              name="workTo"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          style="
+                            width: 10px;
+                            height: 2px;
+                            position: absolute;
+                            background-color: rgb(0, 0, 0);
+                            right: 198px;
+                            top: 40px;
+                          "
+                        ></div>
+                      </div>
+                      <div class="full-row">
+                        <div class="label-input">Vị trí công việc</div>
+                        <div class="streaming-field-container">
+                          <input
+                            type="text"
+                            maxlength="255"
+                            placeholder="Nhập vị trí công việc"
+                            class="text-input"
+                            name="jobTitle"
+                          />
+                        </div>
+                      </div>
+                      <div class="full-row">
+                        <div class="label-input">Mô tả công việc</div>
+                        <div class="streaming-field-container-2">
+                          <textarea
+                            maxlength="255"
+                            placeholder="Nhập mô tả công việc"
+                            class="text-input-2"
+                            name="jobDescription"
+                            rows="4"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="dx-popup-footer display-flex flex-direction-row justify-content-end"
+            >
+              <div class="btn-dont-save">Hủy</div>
+              <div class="btn-save" id="btn-save"></div>
+              <div class="btn-update" id="btn-update"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- import file script -->
+    <script src="./js/service/candidate-service.js"></script>
+    <script src="./js/service/candidate-render.js"></script>
+    <script type="module" src="./js/service/form-handler.js"></script>
+    <script src="./js/components/form/popup-edit.js"></script>
+    <script src="./js/components/form/popup-add.js"></script>
+    <script src="./js/service/search.js"></script>
+    <script src="./js/service/pagination.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
