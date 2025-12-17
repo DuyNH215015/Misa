@@ -32,7 +32,6 @@ const sidebarItems = document.querySelectorAll(".sidebar-item");
 
 sidebarItems.forEach((item) => {
   item.addEventListener("click", () => {
-
     sidebarItems.forEach((i) => i.classList.remove("active"));
 
     item.classList.add("active");
@@ -42,16 +41,17 @@ sidebarItems.forEach((item) => {
 });
 
 // kiem tra trang thai dateinput
-const dateInput = document.querySelector(".date-input");
+const dateInputs = document.querySelectorAll(".date-input");
 
-function updateDateState() {
-  if (dateInput.value) {
-    dateInput.classList.add("has-value");
+function updateDateState(input) {
+  if (input.value) {
+    input.classList.add("has-value");
   } else {
-    dateInput.classList.remove("has-value");
+    input.classList.remove("has-value");
   }
 }
-dateInput.addEventListener("change", updateDateState);
-dateInput.addEventListener("blur", updateDateState);
-updateDateState();
-
+dateInputs.forEach((input) => {
+  input.addEventListener("change", () => updateDateState(input));
+  input.addEventListener("blur", () => updateDateState(input));
+  updateDateState(input);
+});
